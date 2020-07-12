@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using MongoDB.Bson.Serialization.Attributes;
+using System.ComponentModel.DataAnnotations;
 
 namespace KafkaModels.Models.Customer
 {
     public class Customer
     {
-        public int? CustomerId { get; set; }
+        //[BsonId]
+        public dynamic CustomerId { get; set; }
 
         [Required]
         [Display(Name = "First Name")]
@@ -13,6 +16,10 @@ namespace KafkaModels.Models.Customer
         [Required]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Birthdate")]
+        public DateTime Birthdate { get; set; }
 
         [Required]
         [Display(Name = "Email")]
@@ -25,5 +32,7 @@ namespace KafkaModels.Models.Customer
         [Required]
         [Display(Name = "Shipping Address")]
         public Address ShippingAddress { get; set; }
+
+        public int? Age { get; set; }
     }
 }
