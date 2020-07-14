@@ -8,8 +8,12 @@ namespace KafkaModels.Models.Customer
 {
     public class Customer
     {
+        [BsonIgnore]
+        public dynamic Id { get; set; }
+
         [Key]
-        public dynamic CustomerId { get; set; }
+        [BsonIgnore]
+        public int? CustomerId { get; set; }
 
         [BsonId(IdGenerator = typeof(BsonObjectIdGenerator))]
         public ObjectId CustomerIdMg { get; set; }
