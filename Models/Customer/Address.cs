@@ -1,4 +1,4 @@
-﻿namespace KafkaModels.Models.Customer
+﻿namespace MrJB.KafkaModels.Models.Customer
 {
     public class Address
     {

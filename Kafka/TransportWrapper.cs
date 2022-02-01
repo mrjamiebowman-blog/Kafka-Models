@@ -1,6 +1,6 @@
-﻿using KafkaModels.Types;
+﻿using MrJB.KafkaModels.Types;
 
-namespace KafkaModels.Kafka
+namespace MrJB.KafkaModels.Kafka
 {
     public class TransportWrapper
     {

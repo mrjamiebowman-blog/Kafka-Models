@@ -1,4 +1,4 @@
-﻿namespace KafkaModels.Products
+﻿namespace MrJB.KafkaModels.Products
 {
     public class Product
     {

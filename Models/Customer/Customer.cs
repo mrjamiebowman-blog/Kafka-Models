@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.IdGenerators;
 
-namespace KafkaModels.Models.Customer
+namespace MrJB.KafkaModels.Models.Customer
 {
     public class Customer
     {

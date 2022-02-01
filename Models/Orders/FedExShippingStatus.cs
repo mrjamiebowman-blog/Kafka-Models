@@ -1,4 +1,4 @@
-﻿namespace KafkaModels.Models.Orders
+﻿namespace MrJB.KafkaModels.Models.Orders
 {
     public class FedExShippingStatus : ShippingStatus
     {

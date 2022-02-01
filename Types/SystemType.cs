@@ -1,4 +1,4 @@
-﻿namespace KafkaModels.Types
+﻿namespace MrJB.KafkaModels.Types
 {
     public enum SystemType
     {
